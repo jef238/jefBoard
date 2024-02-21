@@ -35,8 +35,8 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 
     ESEMPI:
     
-    Oscillatore interno 1MHZ           -U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
-    Quarzo esterno da 3 a 8MHZ         -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m      
+    | Oscillatore interno 1MHZ   | -U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m |
+    | Quarzo esterno da 3 a 8MHZ | -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m |      
 
 - Impostare i FUSE Bits nell'Attiny2313:
    ```sh
@@ -47,21 +47,21 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 ## Creazione progetto    
 
 - Posizionarsi nella directory dove si deve creare il progetto:
-```sh
-avr-project NOMEPROGETTO
-```                                                 
+  ```sh
+  avr-project NOMEPROGETTO
+  ```                                                 
 
 
 ## Compilazione
 
 - Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313):
-	
+	```sh
 	DEVICE     = attiny2313
 	CLOCK      = 4000000
 	PROGRAMMER = -c usbtiny -p attiny2313
 	OBJECTS    = main.o
 	FUSES      = -U lfuse:w:0xFD:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m -U lock:w:0xFF:m
-
+  ```
 - modificare il codice nel file main.c
 
 - effettuare build (Xcode)
@@ -71,6 +71,6 @@ avr-project NOMEPROGETTO
 ## Flash
 
 - Caricare il file .hex nel chip: 
-
+   ```sh
    avrdude -c usbtiny -p t2313 -e -U flash:w:main.hex
-
+   ```
