@@ -23,3 +23,54 @@ Il firmware di base di JefBoard (vedi sezione -> Firmware di base) mette subito 
 - Gestione degli output dell'Attiny2313 tramite comandi standard (vedi sezione -> Utilizzo del firmware di base)
 
 - Gestione di input (vedi sezione -> Utilizzo del firmware di base)
+
+
+# Appunti di programmazione dell'ATTINY2313
+
+Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313
+
+## Impostazione FUSE bits    
+
+- Utilizzare AVR Calculator per ottenere la stringa corretta (http://www.engbedded.com/fusecalc)
+
+    ESEMPI:
+    
+    Oscillatore interno 1MHZ           -U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
+    Quarzo esterno da 3 a 8MHZ         -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m      
+
+- Impostare i FUSE Bits nell'Attiny2313:
+
+   avrdude -c usbtiny -p t2313 -e -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
+   
+
+
+## Creazione progetto    
+
+- Posizionarsi nella directory dove si deve creare il progetto
+
+- avr-project NOMEPROGETTO
+                                                            
+
+
+## Compilazione
+
+- Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313):
+	
+	DEVICE     = attiny2313
+	CLOCK      = 4000000
+	PROGRAMMER = -c usbtiny -p attiny2313
+	OBJECTS    = main.o
+	FUSES      = -U lfuse:w:0xFD:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m -U lock:w:0xFF:m
+
+- modificare il codice nel file main.c
+
+- effettuare build (Xcode)
+
+                                                            
+                                                                   
+## Flash
+
+- Caricare il file .hex nel chip: 
+
+   avrdude -c usbtiny -p t2313 -e -U flash:w:main.hex
+
