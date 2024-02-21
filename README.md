@@ -18,5 +18,7 @@ Funzionalità base
 Il firmware di base di JefBoard (vedi sezione -> Firmware di base) mette subito a disposizione le seguenti funzionalità:
 
 . Interfaccia WIFI con DHCP server e server con porta di ascolto xxxx per l'invio dei comandi standard
+
 . Gestione degli output dell'Attiny2313 tramite comandi standard (vedi sezione -> Utilizzo del firmware di base)
+
 . Gestione di input (vedi sezione -> Utilizzo del firmware di base)
