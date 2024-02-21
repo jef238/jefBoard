@@ -35,11 +35,12 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 
     ESEMPI:
     
+    |--------------------------|-------------------------------------------------------|
     | Oscillatore interno 1MHZ | -U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m |
     | Quarzo esterno da 3 a 8MHZ | -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m |      
 
 - Impostare i FUSE Bits nell'Attiny2313:
-   ```sh
+   ```
    avrdude -c usbtiny -p t2313 -e -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
    ```
 
@@ -47,7 +48,7 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 ## Creazione progetto    
 
 - Posizionarsi nella directory dove si deve creare il progetto:
-  ```sh
+  ```
   avr-project NOMEPROGETTO
   ```                                                 
 
@@ -55,7 +56,7 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 ## Compilazione
 
 - Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313):
-	```sh
+	```
 	DEVICE     = attiny2313
 	CLOCK      = 4000000
 	PROGRAMMER = -c usbtiny -p attiny2313
@@ -71,6 +72,6 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 ## Flash
 
 - Caricare il file .hex nel chip: 
-   ```sh
+   ```
    avrdude -c usbtiny -p t2313 -e -U flash:w:main.hex
    ```
