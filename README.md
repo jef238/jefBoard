@@ -39,17 +39,17 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
     Quarzo esterno da 3 a 8MHZ         -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m      
 
 - Impostare i FUSE Bits nell'Attiny2313:
-
+   ```sh
    avrdude -c usbtiny -p t2313 -e -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
-   
+   ```
 
 
 ## Creazione progetto    
 
-- Posizionarsi nella directory dove si deve creare il progetto
-
-- avr-project NOMEPROGETTO
-                                                            
+- Posizionarsi nella directory dove si deve creare il progetto:
+```sh
+avr-project NOMEPROGETTO
+```                                                 
 
 
 ## Compilazione
