@@ -34,7 +34,7 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 - Utilizzare AVR Calculator per ottenere la stringa corretta (http://www.engbedded.com/fusecalc)
 
     ESEMPI:
-    
+    |                                  |                                                       |
     |----------------------------------|-------------------------------------------------------|
     | ***Oscillatore interno 1MHZ***   | -U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m |
     | ***Quarzo esterno da 3 a 8MHZ*** | -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m |      
