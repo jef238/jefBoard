@@ -1,5 +1,5 @@
 # jefBoard
-##Cos'è
+## Cos'è
 
 JefBoard è una piattaforma hardware a basso costo basata sul microcontroller Attiny2313 della ATMEL, integra inoltre, la predisposizione per l'inserimento di una scheda WiFI ESP-01 (Opzionale).
 JefBoard integra anche il connettore di programmazione per l'ISP dell'Attiny2313.
