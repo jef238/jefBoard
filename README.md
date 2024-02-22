@@ -22,7 +22,7 @@ Il firmware di base di JefBoard (vedi cartella ->Firmware di base) mette subito 
 - Gestione degli output dell'Attiny2313 tramite comandi standard 
 - Gestione di input (vedi sezione -> Utilizzo del firmware di base)
 
-# Appunti di programmazione dell'ATTINY2313
+# Utilizzo del firmware di base
 (work in progress)
 
 # Appunti di programmazione dell'ATTINY2313
