@@ -25,6 +25,9 @@ Il firmware di base di JefBoard (vedi cartella ->Firmware di base) mette subito 
 # Utilizzo del firmware di base
 (work in progress)
 
+# Flash nodeMCU su ESP-01
+(work in progress)
+
 # Appunti di programmazione dell'ATTINY2313
 
 Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313
