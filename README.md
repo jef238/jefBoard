@@ -64,7 +64,7 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
   ```
 - modificare il codice nel file main.c
 
-- effettuare build (Xcode)
+- effettuare build
 
                                                             
                                                                    
