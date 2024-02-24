@@ -15,9 +15,9 @@ Alcune caratteristiche:
          
 # Caricare un firmware sull'ATTINY2313
 
-Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313
-
-## Impostazione FUSE bits    
+Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313 utilizzando Xcode e CrossPack for AVR Development ([
+](https://github.com/obdev/CrossPack-AVR))
+## 1. Impostazione FUSE bits    
 
 - Utilizzare AVR Calculator per ottenere la stringa corretta (http://www.engbedded.com/fusecalc)
 
@@ -31,18 +31,9 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
    avrdude -c usbtiny -p t2313 -e -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
    ```
 
+## 2. Compilazione
 
-## Creazione progetto    
-
-- Posizionarsi nella directory dove si deve creare il progetto:
-  ```
-  avr-project NOMEPROGETTO
-  ```                                                 
-
-
-## Compilazione
-
-- Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313):
+- Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313; in questo esempio si utilizza un quarzo esterno da 4MHZ):
 	```
 	DEVICE     = attiny2313
 	CLOCK      = 4000000
@@ -51,9 +42,8 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 	FUSES      = -U lfuse:w:0xFD:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m -U lock:w:0xFF:m
   ```
 - modificare il codice nel file main.c
-
-- effettuare build
-                                                            
+- effettuare build (verrà generato main.hex)
+                                                              
                                                                    
 ## Flash
 
