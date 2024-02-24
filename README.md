@@ -6,19 +6,14 @@ JefBoard è una piattaforma hardware a basso costo basata sul microcontroller At
 Alcune caratteristiche:
 - JefBoard espone tutti i pin dell'Attiny2313 per il loro utilizzo.
 - JefBoard permette la realizzazione di applicazioni con supporto WiFi (il modulo ESP-01 comunica tramite connessione seriale con l'Attiny2313).
-- JefBoard può essere assemblata anche senza l'ESP-01 e relativi componenti di alimentazione se non necessari abbassando ulteriormente il costo.
-- JeBoard è una scheda di piccole dimensioni 6x4 cm.
-         
-## Cosa non è
+- JefBoard può essere assemblata anche senza l'ESP-01 e relativi componenti di alimentazione se non si necessita di supporto WiFi abbassando ulteriormente il costo.
+- JefBoard è una scheda di piccole dimensioni 6x4 cm.
 
-Non è una piattaforma che integra strumenti software IDE come Arduino (almeno per il momento...). E' pertanto necessario utilizzare i tool di ATMEL (vedi sezione ->Appunti di programmazione Attiny2313) 
-ed è caldamente consigliato utilizzare il firmware NodeMCU sul modulo ESP-01 (vedi sezione ->Flash nodeMCU su ESP-01). 
-
-# Flash nodeMCU su ESP-01
+## Schema ed elenco componenti
 
 (work in progress)
-
-# Appunti di programmazione dell'ATTINY2313
+         
+# Caricare un firmware sull'ATTINY2313
 
 Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313
 
@@ -58,7 +53,6 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
 - modificare il codice nel file main.c
 
 - effettuare build
-
                                                             
                                                                    
 ## Flash
@@ -67,3 +61,6 @@ Questa sezione verrà documentata in modo più accurato in futuro... Per il mome
    ```
    avrdude -c usbtiny -p t2313 -e -U flash:w:main.hex
    ```
+# Utilizzo dell'ESP01 per il supporto WIFI
+
+(work in progress)
