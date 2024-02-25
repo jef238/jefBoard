@@ -12,6 +12,8 @@ Alcune caratteristiche:
 # Schema ed elenco componenti
 
 ![example](schematic.png)
+
+![example](top.png)
          
 # Caricare un firmware sull'ATTINY2313
 
