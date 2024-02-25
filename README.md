@@ -14,6 +14,29 @@ Alcune caratteristiche:
 ![example](schematic.png)
 
 ![example](top.png)
+
+## Elenco componenti
+
+- C1       100n           Condesatore poliestere
+- C2       100u           Condesatore elettrolitico
+- C4       10u            Condesatore elettrolitico	(Opzionale - Solo in caso di supporto WIFI)	
+- C5       27p            Condesatore ceramico
+- C6       27p            Condesatore ceramico
+- ESP01                   Connettore pin	 	(Opzionale - Solo in caso di supporto WIFI)
+- IC1      ATtiny2313/ATtiny2313a
+- IC2      LM1117DTX 3.3V 				(Opzionale - Solo in caso di supporto WIFI)	
+- JP1                     Connettore tipo M100.1	(Opzionale)
+- JP2                     Connettore tipo M100.1	(Opzionale)
+- LED1                    LED3MM
+- PWR                     Connettore tipo W237-102      (Opzionale)
+- Q1                      Quarzo 4MHZ    		
+- R1       10k            Resistore 1/4w 
+- R2       10k            Resistore 1/4w 		(Opzionale - Solo in caso di supporto WIFI)	
+- R3       20k            Resistore 1/4w 		(Opzionale - Solo in caso di supporto WIFI)	
+- R4       220            Resistore 1/4w
+- RESET1                  Microswitch
+- RESET2                  Microswitch			(Opzionale - Solo in caso di supporto WIFI)
+- SV2                     Connettore pin
          
 # Caricare un firmware sull'ATTINY2313
 
