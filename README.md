@@ -69,7 +69,6 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 	OBJECTS    = main.o
 	FUSES      = -U lfuse:w:0xFD:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m -U lock:w:0xFF:m
   ```
-- modificare il codice nel file main.c
 - effettuare build (verrà generato main.hex)
                                                               
                                                                    
