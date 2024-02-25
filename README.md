@@ -11,13 +11,14 @@ Alcune caratteristiche:
 
 # Schema ed elenco componenti
 
-(work in progress)
+![example](schematic.png)
+
+![example](top.png)
          
 # Caricare un firmware sull'ATTINY2313
 
 Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313 utilizzando Xcode e [CrossPack for AVR Development](https://github.com/obdev/CrossPack-AVR).
-Come programmatore per l'ISP è stato utilizzato l'USBtinyISP
-- [USBtinyISP](https://www.tinyosshop.com/usbtinyisp-avr-isp-programmer) 
+Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https://www.tinyosshop.com/usbtinyisp-avr-isp-programmer) 
 
 ## 1. Impostazione FUSE bits    
 
