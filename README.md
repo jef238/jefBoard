@@ -14,10 +14,35 @@ Alcune caratteristiche:
 ![example](schematic.png)
 
 ![example](top.png)
+
+## Elenco componenti
+
+| Sigla | Valore                        | Tipo			        | Note                                        |
+|-------|-------------------------------|-------------------------------|---------------------------------------------|
+| C1    | 100n           		| Condesatore poliestere        |				              |    
+| C2    | 100u           		| Condesatore elettrolitico     |					      |
+| C4    | 10u            		| Condesatore elettrolitico     | (Opzionale - Solo in caso di supporto WIFI) |	
+| C5    | 27p            		| Condesatore ceramico          |					      |
+| C6    | 27p            		| Condesatore ceramico          | 					      |
+| ESP01 |                 		| Connettore pin		| (Opzionale - Solo in caso di supporto WIFI) |
+| IC1   | ATtiny2313/ATtiny2313a        | AVR			        |				              |
+| IC2   | LM1117DTX 3.3V 		|			        | (Opzionale - Solo in caso di supporto WIFI) |	
+| JP1   |                  		| Connettore tipo M100.1	| (Opzionale)                  		      |
+| JP2   |                  		| Connettore tipo M100.1	| (Opzionale)                                 |
+| LED1  |                  		| LED3MM                        |				              |
+| PWR   |                  		| Connettore tipo W237-102      | (Opzionale)                                 |
+| Q1    |                   		| Quarzo 4MHZ    	        |	                                      |
+| R1    | 10k            		| Resistore 1/4w                |                                             |
+| R2    | 10k            		| Resistore 1/4w 		| (Opzionale - Solo in caso di supporto WIFI) |	
+| R3    | 20k            		| Resistore 1/4w 	        | (Opzionale - Solo in caso di supporto WIFI) |	
+| R4    | 220            		| Resistore 1/4w                | 					      |
+| RESET1|                  		| Microswitch                   |                                             |
+| RESET2|                 		| Microswitch			| (Opzionale - Solo in caso di supporto WIFI) |
+| SV2   |                   		| Connettore pin                |                                             |
          
 # Caricare un firmware sull'ATTINY2313
 
-Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313 utilizzando Xcode e [CrossPack for AVR Development](https://github.com/obdev/CrossPack-AVR).
+Questa sezione verrà documentata in modo più accurato in futuro... Per il momento riporto gli appunti utili per la programmazione degli ATTINY2313 utilizzando Xcode (Mac) e [CrossPack for AVR Development](https://github.com/obdev/CrossPack-AVR).
 Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https://www.tinyosshop.com/usbtinyisp-avr-isp-programmer) 
 
 ## 1. Impostazione FUSE bits    
@@ -44,7 +69,6 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 	OBJECTS    = main.o
 	FUSES      = -U lfuse:w:0xFD:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m -U lock:w:0xFF:m
   ```
-- modificare il codice nel file main.c
 - effettuare build (verrà generato main.hex)
                                                               
                                                                    
