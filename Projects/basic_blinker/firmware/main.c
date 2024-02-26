@@ -8,7 +8,7 @@
 int main(void)
 {
     //Setup
-    DDRB |= (1 << 0) | (1 << 1) | (1 << 2);
+    DDRB |= (1 << PB0) | (1 << PB1) | (1 << PB2); //Set  as OUTPUT
     
     while(1){
         int i;
