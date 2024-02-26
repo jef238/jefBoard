@@ -71,8 +71,15 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
   ```
 - effettuare build (verrà generato main.hex)
                                                               
-                                                                   
-## Flash
+## 3. Collegare l'USBtinyISP
+
+- Assicurarsi di aver correttamente collegato il programmatore al computer e di aver installato i driver per il suo funzionamento
+
+- Collegare l'USBtinyISP al connettore SV2 in questo modo:
+
+  ![example](example.jpg)
+
+## 4. Flash
 
 - Caricare il file .hex nel chip: 
    ```
