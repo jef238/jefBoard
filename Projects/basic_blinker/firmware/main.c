@@ -1,7 +1,5 @@
 /* Name: main.c
- * Author: <insert your name here>
- * Copyright: <insert your copyright message here>
- * License: <insert your license reference here>
+ * Author: g.culotta *
  */
 
 #include <avr/io.h>
@@ -10,7 +8,7 @@
 int main(void)
 {
     //Setup
-    DDRB |= (1 << 0) | (1 << 1) | (1 << 2);
+    DDRB |= (1 << PB0) | (1 << PB1) | (1 << PB2); //Set  as OUTPUT
     
     while(1){
         int i;
