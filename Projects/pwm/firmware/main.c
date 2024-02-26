@@ -6,11 +6,11 @@
 int main(void)
 {
     unsigned char PWM_val1 = 0;        // 8-bit PWM value
-    unsigned char PWM_val2 = 255;    // 8-bit PWM value
-    unsigned char up_dn = 0;        // up down count flag
+    unsigned char PWM_val2 = 255;      // 8-bit PWM value
+    unsigned char up_dn = 0;           // up down count flag
     
-    DDRB   |= (1 << PB2) | (1 << PB3) | (1 << PB4);                   // PWM output on PB2 - OC0A
-    DDRD   |= (1 << PD5);                   // PWM output on PD5 - OC0B
+    DDRB   |= (1 << PB2);              // PWM output on PB2 - OC0A
+    DDRD   |= (1 << PD5);              // PWM output on PD5 - OC0B
     // fast PWM mode
     TCCR0A = (1 << COM0A1) | (1 << COM0B1) | (1 << WGM01) | (1 << WGM00);
     TCCR0B = (1 << CS01);   // clock source = CLK/8, start PWM
