@@ -3,11 +3,7 @@
  * Copyright (c) 2016, Łukasz Marcin Podkalicki <lpodkalicki@gmail.com>
  * ATtiny13/007
  * Simple tone generator.
- * --
- * Settings:
- *  FUSE_L=0x6A
- *  FUSE_H=0xFF
- *  F_CPU=1200000
+ *
  */
 
 
