@@ -77,7 +77,7 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 
 - Collegare l'USBtinyISP al connettore SV2 in questo modo:
 
-  ![example](example.jpg)
+  (foto)
 
 ## 4. Flash
 
