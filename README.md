@@ -91,7 +91,9 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 
 L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il supporto al WIFI in modo semplice ed economico.
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
-L'ESP01 viene fornito generalmente con un firmware basico dotato dei soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU
+L'ESP01 viene fornito generalmente con un firmware basico dotato dei soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU)
+
+
 
 Istruzioni per l’installazione di esptool su MACOSX:
 
