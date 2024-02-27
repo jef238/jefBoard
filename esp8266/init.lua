@@ -1,6 +1,6 @@
 wifi.setmode(wifi.SOFTAP)
 cfg={}
-cfg.ssid="jefRobot"
+cfg.ssid="jefBoard"
 wifi.ap.config(cfg)
 
 uart.setup(0, 9600, 8, uart.PARITY_NONE, uart.STOPBITS_1, 1)
