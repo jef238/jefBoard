@@ -91,32 +91,31 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 
 L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il supporto al WIFI in modo semplice ed economico.
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
-L'ESP01 viene fornito generalmente con un firmware basico dotato dei soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU)
+L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU)
+E' necessario inoltre dotarsi di un adattore USB seriale TTL:
+![adattatore](adattatore_USB_seriale_TTL.jpg)
 
+## Istruzioni per l’installazione di esptool su MACOSX:
 
+- Scaricare e scompattare esptool (https://github.com/espressif/esptool)
 
-Istruzioni per l’installazione di esptool su MACOSX:
+- Assicurarsi di avere Python 1.7 o successivo installato sul sistema
 
-1. Scaricare e scompattare esptool (https://github.com/espressif/esptool)
-
-2. Assicurarsi di avere Python 1.7 o successivo installato sul sistema
-
-3. Spostarsi sulla directory appena scompattata ed eseguire:
-   
+- Spostarsi sulla directory appena scompattata ed eseguire:
+   ```
    sudo python setup.py install
+   ```
 
+## Istruzioni per flash nodemcu su ESP01
 
+- Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione (vedi foto in questa cartella).
 
-Istruzioni per flash nodemcu su ESP01
+- Per settore l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un rese premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
 
-1. Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione (vedi foto in questa cartella).
-
-2. Per settore l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un rese premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
-
-3. Effettuare il comando (nodemcu_base.bin è il nome del file del firmware nodemcu da flashare):
-     
+- Effettuare il comando (nodemcu_base.bin è il nome del file del firmware nodemcu da flashare):
+   ```  
    python esptool.py --port /dev/tty.wchusbserialfa140 write_flash 0x00000 nodemcu_base.bin
-
-4. (opzionale) restore firmware originale (11/12/2019)
+   ```
+- (opzionale) restore firmware originale (11/12/2019)
 
    python esptool.py --port /dev/tty.wchusbserialfd130 write_flash 0x00000 v0.9.2.2\ AT\ Firmware.bin
