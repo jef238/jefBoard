@@ -77,7 +77,7 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 
 - Collegare l'USBtinyISP al connettore SV2 in questo modo:
 
-  ![example](example.jpg)
+  (foto)
 
 ## 4. Flash
 
@@ -91,7 +91,7 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP [USBtinyISP](https
 
 L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il supporto al WIFI in modo semplice ed economico.
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
-L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU)
+L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU). Con questo firmware è possibile programmare facilmente l'ESP01 tramite linguaggio LUA.
 E' necessario inoltre dotarsi di un adattore USB seriale TTL:
 
 ![adattatore](adattatore_USB_seriale_TTL.jpg)
@@ -108,6 +108,7 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
    ```
 
 ## Istruzioni per flash nodemcu su ESP01
+Esistono tanti modi per abilitare la modalità flash su ESP-01. Tempo fa ho realizzato una scheda che per comodità mi permette di riavviare tramite reset l'ESP01 (pulsante 1) mentre metto a massa il pin GPIO0 (pulsante 2):
 
 - Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione:
 
@@ -115,7 +116,7 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
 
 - Per settore l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un rese premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
 
-- Effettuare il comando (nodemcu_base.bin è il nome del file del firmware nodemcu da flashare):
+- Effettuare il comando (nodemcu_base.bin è il nome del file del firmware nodemcu da flashare vedi cartella esp8266):
    ```  
    python esptool.py --port /dev/tty.wchusbserialfa140 write_flash 0x00000 nodemcu_base.bin
    ```
@@ -123,3 +124,6 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
    ``` 
    python esptool.py --port /dev/tty.wchusbserialfd130 write_flash 0x00000 v0.9.2.2\ AT\ Firmware.bin
    ``` 
+## Programmazione ESP01 tramite script LUA
+Una volta caricato il firmware nodeMCU è possibile caricare gli script LUA. Il file init.lua (vedi cartella esp8266) viene caricato all'avvio in maniera automatica.
+E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlorer) per caricare sia gli script LUA che per gestire al meglio l'ESP01
