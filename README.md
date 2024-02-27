@@ -114,7 +114,7 @@ Esistono tanti modi per abilitare la modalità flash su ESP-01 (una ricerca su g
 
   ![adattatore](esp8266/setup.jpg)
 
-- Per settare l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un rese premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
+- Per settare l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un reset premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
 
 - Effettuare il comando (nodemcu_base.bin è il nome del file del firmware nodemcu da flashare vedi cartella esp8266):
    ```  
