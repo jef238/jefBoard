@@ -93,6 +93,7 @@ L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il s
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
 L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU)
 E' necessario inoltre dotarsi di un adattore USB seriale TTL:
+
 ![adattatore](adattatore_USB_seriale_TTL.jpg)
 
 ## Istruzioni per l’installazione di esptool su MACOSX:
