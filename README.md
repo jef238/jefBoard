@@ -109,7 +109,9 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
 
 ## Istruzioni per flash nodemcu su ESP01
 
-- Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione (vedi foto in questa cartella).
+- Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione:
+
+  ![adattatore](esp8266/setup.jpg)
 
 - Per settore l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un rese premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
 
