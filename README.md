@@ -118,5 +118,6 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
    python esptool.py --port /dev/tty.wchusbserialfa140 write_flash 0x00000 nodemcu_base.bin
    ```
 - (opzionale) restore firmware originale (11/12/2019)
-
+   ``` 
    python esptool.py --port /dev/tty.wchusbserialfd130 write_flash 0x00000 v0.9.2.2\ AT\ Firmware.bin
+   ``` 
