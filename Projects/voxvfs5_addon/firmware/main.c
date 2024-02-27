@@ -19,7 +19,7 @@ int main(void)
     DDRB |= (1 << PB0) | (1 << PB1) | (1 << PB2);
     
     //Set pins as INPUT
-    DDRD &= ~(1 << PD5) | ~(1 << PD4) | ~(1 << PD3) | ~(1 << PD2);    // switch on pin PD5-2
+    DDRD &= ~(1 << PD5) | ~(1 << PD4) | ~(1 << PD3) | ~(1 << PD2); // switch on pin PD5-2
     PORTD |= (1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2);    // enable pull-up resistor
     
     blink_01();
