@@ -1,5 +1,6 @@
 /* Name: main.c
  * Author: Giuseppe Culotta
+ * Date: 10/07/2022
  */
 
 #include <avr/io.h>
