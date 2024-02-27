@@ -93,6 +93,7 @@ L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il s
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
 L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU)
 E' necessario inoltre dotarsi di un adattore USB seriale TTL:
+
 ![adattatore](adattatore_USB_seriale_TTL.jpg)
 
 ## Istruzioni per l’installazione di esptool su MACOSX:
@@ -108,7 +109,9 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
 
 ## Istruzioni per flash nodemcu su ESP01
 
-- Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione (vedi foto in questa cartella).
+- Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione:
+
+  ![adattatore](esp8266/setup.jpg)
 
 - Per settore l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un rese premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
 
@@ -117,5 +120,6 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
    python esptool.py --port /dev/tty.wchusbserialfa140 write_flash 0x00000 nodemcu_base.bin
    ```
 - (opzionale) restore firmware originale (11/12/2019)
-
+   ``` 
    python esptool.py --port /dev/tty.wchusbserialfd130 write_flash 0x00000 v0.9.2.2\ AT\ Firmware.bin
+   ``` 
