@@ -108,7 +108,7 @@ E' necessario inoltre dotarsi di un adattore USB seriale TTL:
    ```
 
 ## Istruzioni per flash nodemcu su ESP01
-Esistono tanti modi per abilitare la modalità flash su ESP-01. Tempo fa ho realizzato una scheda che per comodità mi permette di riavviare tramite reset l'ESP01 (pulsante 1) mentre metto a massa il pin GPIO0 (pulsante 2):
+Esistono tanti modi per abilitare la modalità flash su ESP-01 (una ricerca su google è altamente consigliata...). Tempo fa ho realizzato una scheda che per comodità mi permette di riavviare tramite reset l'ESP01 (pulsante 1) mentre metto a massa il pin GPIO0 (pulsante 2):
 
 - Posizionare l’ESP01 e l’interfaccia seriale/USB sulla scheda di programmazione:
 
