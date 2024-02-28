@@ -118,9 +118,9 @@ Esistono tanti modi per abilitare la modalità flash su ESP-01 (una ricerca su g
 
 - Per settare l’ESP01 in modalità flash tenere premuto il pulsante 2 e contemporaneamente effettuare un reset premendo e rilasciando il pulsante 1; dopo qualche istante rilasciare il pulsante 2.
 
-- Effettuare il comando (nodemcu_base.bin è il nome del file del firmware nodemcu da flashare vedi cartella esp8266):
+- Effettuare il comando (nodemcu_base_int.bin è il nome del file del firmware nodemcu da flashare vedi cartella esp8266):
    ```  
-   python esptool.py --port /dev/tty.wchusbserialfa140 write_flash 0x00000 nodemcu_base.bin
+   python esptool.py --port /dev/tty.wchusbserialfa140 write_flash 0x00000 nodemcu_base_int.bin
    ```
 - (opzionale) restore firmware originale (11/12/2019)
    ``` 
