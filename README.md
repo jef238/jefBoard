@@ -95,7 +95,8 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP:
 
 L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il supporto al WIFI in modo semplice ed economico.
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
-L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU). Con questo firmware è possibile programmare facilmente l'ESP01 tramite linguaggio LUA.
+L'ESP01 viene fornito generalmente con un firmware dotato di soli comandi AT per cui prima di utilizzarlo nei nostri progetti è necessario caricare il firmware nodeMCU (https://it.wikipedia.org/wiki/NodeMCU). Con questo firmware è possibile programmare facilmente l'ESP01 tramite linguaggio LUA ed è possibile compilare una versione custom di nodeMCU con il supporto delle librerie/funzionalità necessarie in base all'utilizzo su https://nodemcu-build.com.
+
 E' necessario inoltre dotarsi di un adattore USB seriale TTL:
 
 ![adattatore](adattatore_USB_seriale_TTL.jpg)
