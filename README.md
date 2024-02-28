@@ -17,7 +17,7 @@ Alcune caratteristiche:
 
 ![example](top.png)
 
-![pcb]pcb.jpg)
+![pcb](pcb.jpg)
 
 ## Elenco componenti
 
