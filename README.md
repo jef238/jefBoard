@@ -17,6 +17,8 @@ Alcune caratteristiche:
 
 ![example](top.png)
 
+![pcb]pcb.jpg)
+
 ## Elenco componenti
 
 | Sigla | Valore                        | Tipo			        | Note                                        |
