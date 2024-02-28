@@ -13,6 +13,8 @@ Alcune caratteristiche:
 
 ![example](schematic.png)
 
+# PCB Layout
+
 ![example](top.png)
 
 ## Elenco componenti
