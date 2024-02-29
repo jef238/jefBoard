@@ -19,6 +19,8 @@ Alcune caratteristiche:
 
 ![pcb](pcb.jpg)
 
+![jefboard_r](jefboard_r.png)
+
 ## Elenco componenti
 
 | Sigla | Valore                        | Tipo			        | Note                                        |
