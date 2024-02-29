@@ -21780,7 +21780,7 @@ Source: www.kingbright.com</description>
 <part name="IC1" library="avr" deviceset="ATTINY2313" device="P" override_package3d_urn="urn:adsk.eagle:package:43483744/2" override_package_urn="urn:adsk.eagle:footprint:43483745/1" technology="-20" value="ATtiny2313"/>
 <part name="JP1" library="SparkFun" deviceset="M10" device="&quot;" override_package3d_urn="urn:adsk.eagle:package:43483790/2" override_package_urn="urn:adsk.eagle:footprint:43483791/1" override_locally_modified="yes" value="M10&quot;"/>
 <part name="JP2" library="SparkFun" deviceset="M10" device="&quot;" override_package3d_urn="urn:adsk.eagle:package:43483859/2" override_package_urn="urn:adsk.eagle:footprint:43483860/1" value="M10&quot;"/>
-<part name="RESET1" library="SparkFun" deviceset="TAC_SWITCH" device="PTH"/>
+<part name="RESET1" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" override_package3d_urn="urn:adsk.eagle:package:43487076/2" override_package_urn="urn:adsk.eagle:footprint:43487078/1"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -21790,28 +21790,28 @@ Source: www.kingbright.com</description>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050" package3d_urn="urn:adsk.eagle:package:23629/2" value="100n"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-5" package3d_urn="urn:adsk.eagle:package:23344/1" override_package3d_urn="urn:adsk.eagle:package:43483999/2" override_package_urn="urn:adsk.eagle:footprint:22845/1" value="100u"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" value="10k"/>
-<part name="SV2" library="alex" deviceset="MA03-2" device=""/>
-<part name="ESP01" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-2" device="" package3d_urn="urn:adsk.eagle:package:8368/1"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" override_package3d_urn="urn:adsk.eagle:package:43489724/2" override_package_urn="urn:adsk.eagle:footprint:22995/1" value="10k"/>
+<part name="SV2" library="alex" deviceset="MA03-2" device="" override_package3d_urn="urn:adsk.eagle:package:43487169/2" override_package_urn="urn:adsk.eagle:footprint:43487170/1"/>
+<part name="ESP01" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-2" device="" package3d_urn="urn:adsk.eagle:package:8368/1" override_package3d_urn="urn:adsk.eagle:package:43487151/2" override_package_urn="urn:adsk.eagle:footprint:8328/1"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" value="10k"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" value="20k"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" override_package3d_urn="urn:adsk.eagle:package:43489762/2" override_package_urn="urn:adsk.eagle:footprint:22995/1" value="10k"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" override_package3d_urn="urn:adsk.eagle:package:43489800/2" override_package_urn="urn:adsk.eagle:footprint:22995/1" value="20k"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PWR" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="PWR" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1" override_package3d_urn="urn:adsk.eagle:package:43487117/2" override_package_urn="urn:adsk.eagle:footprint:10676/1"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="RESET2" library="SparkFun" deviceset="TAC_SWITCH" device="PTH"/>
+<part name="RESET2" library="SparkFun" deviceset="TAC_SWITCH" device="PTH" override_package3d_urn="urn:adsk.eagle:package:43487079/2" override_package_urn="urn:adsk.eagle:footprint:43487080/1"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-5" package3d_urn="urn:adsk.eagle:package:23344/1" override_package3d_urn="urn:adsk.eagle:package:43483985/2" override_package_urn="urn:adsk.eagle:footprint:22845/1" value="10u"/>
 <part name="IC2" library="lm1117" deviceset="LM1117DTX-*" device="" override_package3d_urn="urn:adsk.eagle:package:43483884/2" override_package_urn="urn:adsk.eagle:footprint:43483886/1" technology="3.3"/>
-<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:12071/1"/>
-<part name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="27p"/>
-<part name="C6" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="27p"/>
+<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CRYSTAL" device="HC49S" package3d_urn="urn:adsk.eagle:package:12071/1" override_package3d_urn="urn:adsk.eagle:package:43489163/2" override_package_urn="urn:adsk.eagle:footprint:11992/1"/>
+<part name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" override_package3d_urn="urn:adsk.eagle:package:43489080/2" override_package_urn="urn:adsk.eagle:footprint:5361/1" value="27p"/>
+<part name="C6" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" override_package3d_urn="urn:adsk.eagle:package:43489099/2" override_package_urn="urn:adsk.eagle:footprint:5361/1" value="27p"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" override_package3d_urn="urn:adsk.eagle:package:43483760/2" override_package_urn="urn:adsk.eagle:footprint:15654/1"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" value="220"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1" override_package3d_urn="urn:adsk.eagle:package:43489808/2" override_package_urn="urn:adsk.eagle:footprint:22995/1" value="220"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
@@ -22283,6 +22283,7 @@ Source: www.kingbright.com</description>
 <junction x="91.44" y="162.56"/>
 <pinref part="C4" gate="G$1" pin="+"/>
 <junction x="83.82" y="162.56"/>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$20" class="0">
