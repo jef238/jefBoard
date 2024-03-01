@@ -133,5 +133,55 @@ Esistono tanti modi per abilitare la modalità flash su ESP-01 (una ricerca su g
    python esptool.py --port /dev/tty.wchusbserialfd130 write_flash 0x00000 v0.9.2.2\ AT\ Firmware.bin
    ``` 
 ## Programmazione ESP01 tramite script LUA
-Una volta caricato il firmware nodeMCU è possibile caricare gli script LUA. Il file init.lua (vedi cartella esp8266) viene caricato all'avvio in maniera automatica.
-E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlorer) sia per caricare sia gli script LUA che per gestire al meglio l'ESP01
+Una volta caricato il firmware nodeMCU è possibile caricare gli script LUA. Il file denominato init.lua viene caricato all'avvio in maniera automatica.
+E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlorer) sia per caricare sia gli script LUA che per gestire al meglio l'ESP01.
+
+# Utilizzo di jefBoard come server WIFI
+Per questo utilizzo è necessario che la scheda sia equipaggiata con l'ESP01 aggiornata con il firmware nodeMCU, ed i relativi componenti. Di seguito un esempio di file init.lua (da caricare sull'ESP01) e del codice da utilizzare sull'Attiny2313:
+
+## init.lua
+
+```
+wifi.setmode(wifi.SOFTAP)
+cfg={}
+cfg.ssid="jefBoard"
+wifi.ap.config(cfg)
+
+uart.setup(0, 9600, 8, uart.PARITY_NONE, uart.STOPBITS_1, 1)
+
+sv = net.createServer(net.TCP, 30)
+
+function receiver(sck, data)
+  print(data)  
+end
+
+if sv then
+  sv:listen(8080, function(conn)
+    conn:on("receive", receiver)    
+  end)
+end
+``` 
+Questo script serve ad utilizzare l'ESP01 come server in ascolto sulla porta 8080 e ad inoltrare i comandi ricevuti tramite seriale verso l'Attiny2313
+
+## main.c
+
+```
+wifi.setmode(wifi.SOFTAP)
+cfg={}
+cfg.ssid="jefBoard"
+wifi.ap.config(cfg)
+
+uart.setup(0, 9600, 8, uart.PARITY_NONE, uart.STOPBITS_1, 1)
+
+sv = net.createServer(net.TCP, 30)
+
+function receiver(sck, data)
+  print(data)  
+end
+
+if sv then
+  sv:listen(8080, function(conn)
+    conn:on("receive", receiver)    
+  end)
+end
+``` 
