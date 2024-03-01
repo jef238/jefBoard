@@ -19,7 +19,7 @@ Alcune caratteristiche:
 
 ![pcb](pcb.jpg)
 
-![jefboard_r](jefboard_r.png)
+![jefboard_r](jefboard_r.PNG)
 
 ## Elenco componenti
 
