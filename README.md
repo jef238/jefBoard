@@ -14,7 +14,7 @@ Alcune caratteristiche:
 ![example](schematic.png)
 
 # PCB Layout
-## Per reperire la PCB puoi contattarmi al mio indirizzo giuseppe.culotta@gmail.com
+Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 
 ![example](top.png)
 
