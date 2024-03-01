@@ -1,7 +1,5 @@
 /* Name: main.c
- * Author: <insert your name here>
- * Copyright: <insert your copyright message here>
- * License: <insert your license reference here>
+ * Author: g.culotta 
  */
 
 #include <avr/io.h>
@@ -32,8 +30,7 @@ int main(void)
 
     while(1){
         if (PIND & (1 << PD5)) {    // is switch open?
-            // switch is open...
-            up();
+            // switch is open...            
         }
         else {
             // switch is closed...
@@ -67,18 +64,3 @@ void up(){
     D_off;
     A_off;
 }
-void up1(){
-    A_on;
-    myDelay();
-    A_off;
-    B_on;
-    myDelay();
-    B_off;
-    C_on;
-    myDelay();
-    C_off;
-    D_on;
-    myDelay();
-    D_off;
-}
-
