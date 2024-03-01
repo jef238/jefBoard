@@ -137,6 +137,7 @@ Una volta caricato il firmware nodeMCU è possibile caricare gli script LUA. Il 
 E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlorer) sia per caricare sia gli script LUA che per gestire al meglio l'ESP01.
 
 # Utilizzo di jefBoard come server WIFI
+In questo caso l'ESP01 funge da server in ascolto sulla porta 8080 tramite connessione WIFI; Ricevuto il comando lo inoltra tramite la connessione seriale verso l'Attiny2313.
 Per questo utilizzo è necessario che la scheda sia equipaggiata con l'ESP01 aggiornata con il firmware nodeMCU, ed i relativi componenti. Di seguito un esempio di file init.lua (da caricare sull'ESP01) e del codice da utilizzare sull'Attiny2313:
 
 ## init.lua
@@ -160,8 +161,7 @@ if sv then
     conn:on("receive", receiver)    
   end)
 end
-``` 
-Questo script serve ad utilizzare l'ESP01 come server in ascolto sulla porta 8080 e ad inoltrare i comandi ricevuti tramite seriale verso l'Attiny2313
+```
 
 ## main.c
 
