@@ -83,9 +83,7 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP:
 
 - Assicurarsi di aver correttamente collegato il programmatore al computer e di aver installato i driver per il suo funzionamento
 
-- Collegare l'USBtinyISP al connettore SV2 in questo modo:
-
-  (foto)
+- Collegare l'USBtinyISP al connettore SV2
 
 ## 4. Flash
 
