@@ -14,6 +14,7 @@ Alcune caratteristiche:
 ![example](schematic.png)
 
 # PCB Layout
+Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 
 ![example](top.png)
 
@@ -133,4 +134,4 @@ Esistono tanti modi per abilitare la modalità flash su ESP-01 (una ricerca su g
    ``` 
 ## Programmazione ESP01 tramite script LUA
 Una volta caricato il firmware nodeMCU è possibile caricare gli script LUA. Il file init.lua (vedi cartella esp8266) viene caricato all'avvio in maniera automatica.
-E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlorer) per caricare sia gli script LUA che per gestire al meglio l'ESP01
+E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlorer) sia per caricare sia gli script LUA che per gestire al meglio l'ESP01
