@@ -39,10 +39,10 @@ Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 | LED1  |                  		| LED3MM                        |				              |
 | PWR   |                  		| Connettore tipo W237-102      | (Opzionale)                                 |
 | Q1    |                   		| Quarzo 4MHZ    	        |	                                      |
-| R1    | 10k            		| Resistore 1/4w                |                                             |
-| R2    | 10k            		| Resistore 1/4w 		| (Opzionale - Solo in caso di supporto WIFI) |	
-| R3    | 20k            		| Resistore 1/4w 	        | (Opzionale - Solo in caso di supporto WIFI) |	
-| R4    | 220            		| Resistore 1/4w                | 					      |
+| R1    | 10k            		| 1/4w		                |                                             |
+| R2    | 10k            		| 1/4w 				| (Opzionale - Solo in caso di supporto WIFI) |	
+| R3    | 20k            		| 1/4w 	        		| (Opzionale - Solo in caso di supporto WIFI) |	
+| R4    | 220            		| 1/4w                		| 					      |
 | RESET1|                  		| Microswitch                   |                                             |
 | RESET2|                 		| Microswitch			| (Opzionale - Solo in caso di supporto WIFI) |
 | SV2   |                   		| Connettore pin                |                                             |
