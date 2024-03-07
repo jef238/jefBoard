@@ -41,7 +41,7 @@ ___Compilazione Xcode_________________________________________________
 __Atmel Studio (Windows)
 
 1. Project->Properties->Toolchain->AVR/GNU C Compiler->Symbols: add F_CPU=2000000   //2MHZ 
-
+2. Impostare USBTINY come external tool (https://www.programming-electronics-diy.xyz/2020/09/using-usbtinyisp-programmer-with-atmel.html)
                                                                    
 ___Flash________________________________________________________
 
