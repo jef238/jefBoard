@@ -16,7 +16,7 @@ ___Impostazione FUSE bits______________________________________
    
 
 
-___Creazione progetto__________________________________________    
+___Creazione progetto Xcode__________________________________________    
 
 1. Posizionarsi nella directory dove si deve creare il progetto
 
@@ -24,7 +24,7 @@ ___Creazione progetto__________________________________________
                                                             
 
 
-___Compilazione_________________________________________________   
+___Compilazione Xcode_________________________________________________   
 
 1. Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313):
 	
@@ -38,7 +38,10 @@ ___Compilazione_________________________________________________
 
 3. effettuare build (Xcode)
 
-                                                            
+__Atmel Studio (Windows)
+
+1. Project->Properties->Toolchain->AVR/GNU C Compiler->Symbols: add F_CPU=2000000   //2MHZ 
+
                                                                    
 ___Flash________________________________________________________
 
