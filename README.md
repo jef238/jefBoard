@@ -2,7 +2,7 @@
 ![example](example.jpg)
 ## Cos'è
 
-JefBoard è una piattaforma hardware a basso costo basata sul microcontroller Attiny2313 della ATMEL. Si presta allo sviluppo di applicazioni di varia natura e integra la predisposizione per la scheda WiFI ESP-01 (Opzionale) e il connettore per la programmazione ISP dell'Attiny2313.
+JefBoard è una scheda di sviluppo basata sul microcontroller Attiny2313 della ATMEL. Si presta allo sviluppo di applicazioni di varia natura e integra la predisposizione per la scheda WiFI ESP-01 (Opzionale) e il connettore per la programmazione ISP dell'Attiny2313.
 Alcune caratteristiche:
 - JefBoard espone tutti i pin dell'Attiny2313 per il loro utilizzo.
 - JefBoard permette la realizzazione di applicazioni con supporto WiFi (il modulo ESP-01 comunica tramite connessione seriale con l'Attiny2313).
@@ -29,8 +29,8 @@ Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 | C1    | 100n           		| Condesatore poliestere        |				              |    
 | C2    | 100u           		| Condesatore elettrolitico     |					      |
 | C4    | 10u            		| Condesatore elettrolitico     | (Opzionale - Solo in caso di supporto WIFI) |	
-| C5    | 27p            		| Condesatore ceramico          |					      |
-| C6    | 27p            		| Condesatore ceramico          | 					      |
+| C5    | 22p            		| Condesatore ceramico          |					      |
+| C6    | 22p            		| Condesatore ceramico          | 					      |
 | ESP01 |                 		| Connettore pin		| (Opzionale - Solo in caso di supporto WIFI) |
 | IC1   | ATtiny2313/ATtiny2313a        | AVR			        |				              |
 | IC2   | LM1117DTX 3.3V 		|			        | (Opzionale - Solo in caso di supporto WIFI) |	
@@ -60,8 +60,9 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP:
 
     ESEMPI:
     ```
-    /* Oscillatore interno 1MHZ */     -U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
-    /* Quarzo esterno da 3 a 8MHZ */   -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m     
+    /* Oscillatore interno 1MHZ */     						-U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
+    /* Quarzo esterno da 3 a 8MHZ */   						-U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
+    /* Quarzo esterno da 16MHZ con CKDIV8 e frequenza effettiva 2MHZ */		-U efuse:w:0xff:m -U hfuse:w:0xdf:m -U lfuse:w:0x4e:m     
     ```
 - Impostare i FUSE Bits nell'Attiny2313:
    ```
