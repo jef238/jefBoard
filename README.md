@@ -69,7 +69,7 @@ Come programmatore per l'ISP è stato utilizzato l'USBtinyISP:
    avrdude -c usbtiny -p t2313 -e -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
    ```
 
-## 2. Compilazione
+## 2. Compilazione (Xcode)
 
 - Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313; in questo esempio si utilizza un quarzo esterno da 4MHZ):
 	```
