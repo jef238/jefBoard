@@ -4,9 +4,8 @@
 
 Orologio elettromeccanico prodotto da Solari qualche decennio fa ... Per info consultare: http://www.assosrl.it/catalogo/fuori-commercio/metor.
 Il suo funzionamento era basato su una scheda master di controllo a cui gli orologi venivano collegati in parallelo e venivano azionati dalla stessa scheda tramite una tensione di 24v.
+la scheda master generava un impulso di durata breve, ogni minuto invertendone alternativamente la polarità. La piccola schedina a bordo dell'orologio si occupava di attivare il motorino DC collegato alla meaccanica delle palette, e di gestire l'interruttore di fine corsa in modo da fermare il movimento del motorino dopo lo scatto del minuto in maniera precisa.
 Inutile dire che non è semplice recuperare la scheda originale ed è sicuramente più laborioso riprogettare una scheda che la emuli.
-Dal punto di vista del funzionamento l'orologio è dotato di una scheda interna che aziona un motorino DC che a sua volta aziona la meccanica delle palette. Un interruttore meccanico funge da fine corsa in modo da far avanzare la meccanica di 1 minuto alla volta.
-
 
 Per lo sviluppo di questa applicazione sono partito da alcuni punti fissi:
 - Utilizzare 5 Volt come alimentazione e non 24 in modo da utilizzare la stessa alimentazione della JefBoard.
