@@ -12,6 +12,6 @@ Per lo sviluppo di questa applicazione sono partito da alcuni punti fissi:
 - Utilizzare 5 Volt come alimentazione e non 24 in modo da utilizzare la stessa alimentazione della JefBoard.
 - Bypassare la circuitazione a bordo dell'orologio preservando lo stesso funzionamento elettromeccanico.
 
-Per ottenere il funzionamento era dunque necessario pilotare direttamente il motorino DC e gestire l'interrutore di fine corsa in modo opportuno.
+Per ottenere il funzionamento era dunque necessario azionare direttamente il motorino DC ogni 60 secondi e gestire l'interrutore di fine corsa in modo opportuno.
 
 ## Schema elettrico
