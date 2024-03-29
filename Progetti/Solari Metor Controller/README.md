@@ -1,4 +1,4 @@
-# Solari Metor Controller
+# Solari Metor Controller (in progress)
 ![solari_metor](solari_metor.jpg)
 ## Descrizione
 
