@@ -61,21 +61,19 @@ ISR(PCINT0_vect) {
 
 
 
-
 int main(void)
 {
 	
 	//Setup
 	DDRB |= (1 << PINB7) | (1 << PINB6);	// Set  as OUTPUT	
-	DDRB &= ~ (1 << PINB1);					// define PB1 as input
-	PORTB |= 1 << PINB1;					// enable pull up resistor at PB1
-		
+	DDRB &= ~ (1 << PINB1);					      // define PB1 as input
+	PORTB |= 1 << PINB1;				         	// enable pull up resistor at PB1
+		                             
 	GIMSK |= 1 << PCIE0;      // enable PCINT[0:7] pin change interrupt
 	PCMSK0 |= 1 << PCINT1;    // configure interrupt at PB1 (PCINT1)
 	sei();                    // globally enable interrupts
 	
-    //_delay_ms(1000);
-    
+       
 	while (1){
 		step();			
 		_delay_ms(60008);
