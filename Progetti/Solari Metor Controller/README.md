@@ -34,6 +34,7 @@ In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente u
 
 ## Schema elettrico
 
+```
  Vcc + 5v --------------------------------------------                            
                                                      |                            
      |                                               |                            
@@ -60,7 +61,7 @@ In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente u
      |                                        |                                   
      |                                        |                                   
    GND                                       GND                                  
-                                                                                  
+```                                                                                  
 
 Cablaggio dei componenti:
 
