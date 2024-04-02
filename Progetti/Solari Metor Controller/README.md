@@ -76,7 +76,7 @@ int main(void)
        
 	while (1){
 		step();			
-		_delay_ms(60008);
+		_delay_ms(60008);      // value calculated empirically see below
 		}		
 		return 0;   /* never reached */
 }
@@ -96,7 +96,7 @@ sono stato costretto ad utilizzare un valore di 60007 ms piuttosto che 60000 ms 
 ```
 Esempio: 
 
-Intervallo di tempo considerato 24 ore scostamento rilevato -5 sec
+Intervallo di tempo considerato 24 ore (1440 minuti) scostamento rilevato -5 sec
 
-5000 ms / (24x60)  =  3,47 ms che possiammo arrotondare a 4 ms = 60000 + 4 = 60004 ms
+5000 ms / (1440 minuti)  =  3,47 ms che possiammo arrotondare a 4 ms = 60000 + 4 = 60004 ms
 ```
