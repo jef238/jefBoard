@@ -34,7 +34,33 @@ In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente u
 
 ## Schema elettrico
 
-https://textik.com/#cee64b0be2e9c5f9
+ Vcc + 5v --------------------------------------------                            
+                                                     |                            
+     |                                               |                            
+     |                                               |                            
+     |                                               |                            
+     |                                               |                            
+     |    +-----------------+                 +------------+                      
+     -----|+ VCC 5v     PB7 |-----------------|IN1  5V  MA1|-----------           
+          |                 |                 |            |         To DC MOTOR  
+          |             PB6 |-----------------|IN2      MA2|-----------           
+          |                 |                 |            |                      
+          |                 |                 | L298N mini |                      
+          | jefBOARD        |                 |            |                      
+          |                 |       GND ------| GND        |                      
+          |                 |                 +------------+                      
+          |                 |                                                     
+          |             PB1 -----------------------------------------             
+          |                 |                                      To Switch      
+     -----|GND              |                 -----------------------             
+     |    +-----------------+                 |                                   
+     |                                        |                                   
+     |                                        |                                   
+     |                                        |                                   
+     |                                        |                                   
+     |                                        |                                   
+   GND                                       GND                                  
+                                                                                  
 
 Cablaggio dei componenti:
 
