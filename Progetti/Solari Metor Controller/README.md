@@ -51,7 +51,7 @@ In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente u
           |                 |       GND ------| GND        |                      
           |                 |                 +------------+                      
           |                 |                                                     
-          |             PB1 -----------------------------------------             
+          |             PB1 |-----------------------------------------             
           |                 |                                      To Switch      
      -----|GND              |                 -----------------------             
      |    +-----------------+                 |                                   
