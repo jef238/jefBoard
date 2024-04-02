@@ -103,4 +103,4 @@ Intervallo di tempo considerato 24 ore (1440 minuti) scostamento rilevato -5 sec
 
 ## Contatti
 
-mailto:giuseppe.culotta@gmail.com
+giuseppe.culotta@gmail.com
