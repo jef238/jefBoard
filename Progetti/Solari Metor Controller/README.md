@@ -31,3 +31,13 @@ L'altro aspetto da gestire è quello dello switch di finecorsa originale:
 In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente utilizzare due contatti dello switch e collegarli direttamente alla jefBoard:
 
 ![switch2](switch_p.jpg)
+
+## Schema elettrico
+
+## Codice
+
+Il codice è abbastanza semplice: in pratica il motorino verrà attivato ogni 60 secondi utilizzando la funzione delay, e il pin change interrupt PCINT0 provvederà a "spegnere" il motorino dopo l'avanzamento meccanico del minuto.
+
+## Taratura
+
+Purtroppo a causa di piccole tolleranze nella componentistica e malgrado siano stati correttamente settati i FUSEBITS nell'attiny2313 in accordo con la frequenza del quarzo che nel mio caso è da 16 MHZ e il prescaler che avevo settato a CKDIV8 (vedi https://github.com/jef238/jefBoard?tab=readme-ov-file#1-impostazione-fuse-bits) utilizzato sono stato costretto ad utilizzare un valore di 60007 ms piuttosto che 60000 ms come ci si aspetterebbe
