@@ -34,6 +34,11 @@ In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente u
 
 ## Schema elettrico
 
+Cablaggio dei componenti:
+
+![cablaggio](cablaggio.jpg)
+
+
 ## Codice
 
 Il codice è abbastanza semplice: in pratica il motorino verrà attivato ogni 60 secondi utilizzando la funzione delay, e il pin change interrupt PCINT0 provvederà a "spegnere" il motorino dopo l'avanzamento meccanico del minuto.
