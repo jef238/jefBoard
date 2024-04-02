@@ -8,10 +8,11 @@ la scheda master generava un impulso di durata breve, ogni minuto invertendone a
 Inutile dire che non è semplice recuperare la scheda originale ed è sicuramente più laborioso riprogettare una scheda che la emuli.
 
 Per lo sviluppo di questa applicazione sono partito da alcuni punti fissi:
+- Utilizzare la jefBoard
 - Utilizzare 5 Volt come alimentazione e non 24 in modo da utilizzare la stessa alimentazione della JefBoard.
 - Bypassare la circuitazione a bordo dell'orologio preservando lo stesso funzionamento elettromeccanico.
 
-Per ottenere il funzionamento era dunque necessario azionare direttamente il motorino DC ogni 60 secondi e gestire l'interrutore di fine corsa in modo opportuno. In queso la schedina originale a bordo dell'orologio non dovrà essere utilizzata (e alimentata) perchè la sua unica funzione sarà quella di supporto meccanico per lo switch di finecorsa.
+Per ottenere il funzionamento era dunque necessario azionare direttamente il motorino DC ogni 60 secondi e gestire l'interrutore di fine corsa in modo opportuno. La schedina originale a bordo dell'orologio non dovrà essere utilizzata (e alimentata) perchè la sua unica funzione sarà quella di supporto meccanico per lo switch di finecorsa.
 
 ## Componenti
 
