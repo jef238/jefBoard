@@ -100,3 +100,7 @@ Intervallo di tempo considerato 24 ore (1440 minuti) scostamento rilevato -5 sec
 
 5000 ms / (1440 minuti)  =  3,47 ms che possiammo arrotondare a 4 ms = 60000 + 4 = 60004 ms
 ```
+
+## Contatti
+
+mailto:giuseppe.culotta@gmail.com
