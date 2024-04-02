@@ -15,6 +15,15 @@ Per ottenere il funzionamento era dunque necessario azionare direttamente il mot
 
 ## Componenti
 
-La jefBoard (ovviamente) può essere assemblata senza i componenti relativi al WIFI; per pilotare il motorino DC poi ho utilizzato una scheda driver di piccole dimensioni tipo questa (https://it.aliexpress.com/item/1005006532295626.html):
+La jefBoard (ovviamente) può essere assemblata senza i componenti relativi al WIFI; per pilotare il motorino DC poi ho utilizzato una scheda driver di piccole dimensioni tipo questa:
+
+(https://it.aliexpress.com/item/1005006532295626.html)
 
 ![l298mini](L298N-Mini.webp)
+
+Quest'ultima va benissimo per la tensione e la corrente che dovrà gestire e in più è veramente piccola e può comodamente essere inserita all'interno del box dell'orologio.
+
+La scheda può pilotare tipicamente due motori  ma in questo caso utilizzeremo solo la prima coppia di pin di output (Motor A); come si intuisce sarà sufficiente fornie un livello logico positivo piuttosto che negativo sui pin di input (IN1, IN2) per azionare il motorino.
+L'altro aspetto da gestire è quello dello switch di finecorsa originale:
+
+![switch](switch.jpg)
