@@ -17,7 +17,7 @@ Per ottenere il funzionamento era dunque necessario azionare direttamente il mot
 
 La jefBoard (ovviamente) può essere assemblata senza i componenti relativi al WIFI; per pilotare il motorino DC poi ho utilizzato una scheda driver di piccole dimensioni tipo questa:
 
-(https://it.aliexpress.com/item/1005006532295626.html)
+https://it.aliexpress.com/item/1005006532295626.html
 
 ![l298mini](L298N-Mini.webp)
 
@@ -27,3 +27,7 @@ La scheda può pilotare tipicamente due motori  ma in questo caso utilizzeremo s
 L'altro aspetto da gestire è quello dello switch di finecorsa originale:
 
 ![switch](switch.jpg)
+
+In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente utilizzare due contatti dello switch e collegarli direttamente alla jefBoard:
+
+![switch2](switch_p.jpg)
