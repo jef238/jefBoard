@@ -13,4 +13,7 @@ Per lo sviluppo di questa applicazione sono partito da alcuni punti fissi:
 
 Per ottenere il funzionamento era dunque necessario azionare direttamente il motorino DC ogni 60 secondi e gestire l'interrutore di fine corsa in modo opportuno.
 
-## Schema elettrico
+## Componenti
+
+La jefBoard (ovviamente) può essere assemblata senza i componenti relativi al WIFI; per pilotare il motorino DC poi ho utilizzato una scheda driver di piccole dimensioni tipo questa (https://it.aliexpress.com/item/1005006532295626.html):
+![l298mini](L298N-Mini.webp)
