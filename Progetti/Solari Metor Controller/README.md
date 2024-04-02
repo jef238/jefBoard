@@ -124,8 +124,8 @@ void step(){
 
 ## Taratura
 
-Purtroppo a causa di piccole tolleranze nella componentistica e malgrado siano stati correttamente settati i FUSEBITS nell'attiny2313 in accordo con la frequenza del quarzo che nel mio caso è da 16 MHZ e CKDIV8, per cui una frequenza di clock effettiva di 2 MHZ(vedi https://github.com/jef238/jefBoard?tab=readme-ov-file#1-impostazione-fuse-bits);
-sono stato costretto ad utilizzare un valore di 60007 ms piuttosto che 60000 ms come ci si aspetterebbe. Ho ottenuto questo valore in maniera empirica ovvero osservando lo scostamento in secondi nell'arco di un determinato periodo di tempo e dividendo lo scostamento per il numero di minuti dell'intervallo stesso.
+Purtroppo a causa di piccole tolleranze nella componentistica e malgrado siano stati correttamente settati i FUSEBITS nell'attiny2313 in accordo con la frequenza del quarzo (io ho utilizzato un quarzo da 16 MHZ e CKDIV8, per cui una frequenza di clock effettiva di 2 MHZ - vedi https://github.com/jef238/jefBoard?tab=readme-ov-file#1-impostazione-fuse-bits), sono stato costretto ad utilizzare un valore di 60007 ms piuttosto che 60000 ms come ci si aspetterebbe.
+Ho ottenuto questo valore in maniera empirica ovvero osservando lo scostamento in secondi nell'arco di un determinato periodo di tempo e dividendo lo scostamento per il numero di minuti dell'intervallo stesso.
 
 ```
 Esempio: 
