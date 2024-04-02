@@ -38,6 +38,58 @@ In questo caso visto che utilizzeremo un PINCHANGE interrupt sarà sufficiente u
 
 Il codice è abbastanza semplice: in pratica il motorino verrà attivato ogni 60 secondi utilizzando la funzione delay, e il pin change interrupt PCINT0 provvederà a "spegnere" il motorino dopo l'avanzamento meccanico del minuto.
 
+```
+/*
+ * Solari Metor Controller.c
+ *
+ * Created: 08/03/2024 12:00:07
+ * Author : g.culotta
+ */ 
+
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/interrupt.h>
+//#define F_CPU 2000000UL
+
+void step();
+int intr_count=0;
+
+ISR(PCINT0_vect) {	
+		
+		PORTB &= ~(1 << PINB7);           // switch PB7 off
+}
+
+
+
+
+int main(void)
+{
+	
+	//Setup
+	DDRB |= (1 << PINB7) | (1 << PINB6);	// Set  as OUTPUT	
+	DDRB &= ~ (1 << PINB1);					// define PB1 as input
+	PORTB |= 1 << PINB1;					// enable pull up resistor at PB1
+		
+	GIMSK |= 1 << PCIE0;      // enable PCINT[0:7] pin change interrupt
+	PCMSK0 |= 1 << PCINT1;    // configure interrupt at PB1 (PCINT1)
+	sei();                    // globally enable interrupts
+	
+    //_delay_ms(1000);
+    
+	while (1){
+		step();			
+		_delay_ms(60008);
+		}		
+		return 0;   /* never reached */
+}
+
+
+void step(){
+	PORTB |=  (1 << PINB7);           // switch PB7 on
+	PORTB &= ~(1 << PINB6);           // switch PB6 off	
+}
+```
+
 ## Taratura
 
 Purtroppo a causa di piccole tolleranze nella componentistica e malgrado siano stati correttamente settati i FUSEBITS nell'attiny2313 in accordo con la frequenza del quarzo che nel mio caso è da 16 MHZ e il prescaler che avevo settato a CKDIV8 (vedi https://github.com/jef238/jefBoard?tab=readme-ov-file#1-impostazione-fuse-bits) utilizzato sono stato costretto ad utilizzare un valore di 60007 ms piuttosto che 60000 ms come ci si aspetterebbe
