@@ -16,7 +16,7 @@ Per ottenere il funzionamento era dunque necessario azionare direttamente il mot
 
 ## Componenti
 
-La jefBoard può essere assemblata senza i componenti relativi al WIFI; per pilotare il motorino DC poi ho utilizzato una scheda driver di piccole dimensioni tipo questa:
+La jefBoard può essere assemblata senza i componenti relativi al WIFI (https://github.com/jef238/jefBoard?tab=readme-ov-file#cos%C3%A8); per pilotare il motorino DC poi ho utilizzato una scheda driver di piccole dimensioni tipo questa:
 
 https://it.aliexpress.com/item/1005006532295626.html
 
