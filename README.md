@@ -56,7 +56,7 @@ Io utilizzo Xcode e [CrossPack for AVR Development](https://github.com/obdev/Cro
 In ambiente Windows vi consiglio di utilizzare Atmel Studio 7 ma sembra che recentemente sia stato sostituito da un altro prodotto: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio.
 Se utilizzate Atmel Studio ricordate di selezionare l'Attiny2313a come chip durante la creazione del progetto ed eseguire i seguenti step:
 - Project->Properties->Toolchain->AVR/GNU C Compiler->Symbols: aggiungere F_CPU=2000000  (In questo caso la frequenza di clock è di 2MHZ e comunque deve essere identica ai FUSE bits vedi sezione successiva)
-![atstudio](atstudio.png)
+![atstudio](studio.png)
 - impostare USBTINY come external tool (https://www.programming-electronics-diy.xyz/2020/09/using-usbtinyisp-programmer-with-atmel.html), in questo modo potete scrivere il firmware in formato hex sul chip direttamente dall'interfaccia di Atmel Studio dal menu Tools.
 
 Come programmatore hardware per l'ISP ho utilizzato l'USBtinyISP:
