@@ -47,9 +47,7 @@ Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 | RESET2|                 		| Microswitch			| (Opzionale - Solo in caso di supporto WIFI) |
 | SV2   |                   		| Connettore pin                |                                             |
          
-# Caricare un firmware sull'ATTINY2313
-
-Questa sezione verrà documentata in modo più accurato in futuro... 
+# Programmazione
 
 Io utilizzo Xcode e [CrossPack for AVR Development](https://github.com/obdev/CrossPack-AVR) in ambiente Mac.
 
@@ -57,13 +55,16 @@ In ambiente Windows vi consiglio di utilizzare Atmel Studio 7 ma sembra che rece
 Se utilizzate Atmel Studio ricordate di selezionare l'Attiny2313a come chip durante la creazione del progetto ed eseguire i seguenti step:
 - Project->Properties->Toolchain->AVR/GNU C Compiler->Symbols: aggiungere F_CPU=2000000  (In questo caso la frequenza di clock è di 2MHZ e comunque deve essere identica ai FUSE bits vedi sezione successiva)
 ![atstudio](studio.png)
-- impostare USBTINY come external tool (https://www.programming-electronics-diy.xyz/2020/09/using-usbtinyisp-programmer-with-atmel.html), in questo modo potete scrivere il firmware in formato hex sul chip direttamente dall'interfaccia di Atmel Studio dal menu Tools.
+- Impostare USBTINY come external tool (https://www.programming-electronics-diy.xyz/2020/09/using-usbtinyisp-programmer-with-atmel.html), in questo modo potete scrivere il firmware in formato hex sul chip direttamente dall'interfaccia di Atmel Studio dal menu Tools.
 
 Come programmatore hardware per l'ISP ho utilizzato l'USBtinyISP:
 
 ![usbtinyisp](usbtinyisp.jpg)
 
-## 1. Impostazione FUSE bits    
+
+## 1. Impostazione FUSE bits
+
+Questa procedura deve essere eseguita solo una volta poichè serve a settare le impostazioni di base del bootloader del chip   
 
 - Utilizzare AVR Calculator per ottenere la stringa corretta (http://www.engbedded.com/fusecalc)
 
@@ -78,7 +79,7 @@ Come programmatore hardware per l'ISP ho utilizzato l'USBtinyISP:
    avrdude -c usbtiny -p t2313 -e -U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
    ```
 
-## 2. Compilazione (Xcode)
+## 2a. Compilazione su Xcode (Mac)
 
 - Modificare le righe seguenti nel file Makefile (ATTENZIONE: la riga FUSES deve essere identica alle impostazioni di FUSE Bits dell'Attiny2313; in questo esempio si utilizza un quarzo esterno da 4MHZ):
 	```
@@ -89,19 +90,27 @@ Come programmatore hardware per l'ISP ho utilizzato l'USBtinyISP:
 	FUSES      = -U lfuse:w:0xFD:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m -U lock:w:0xFF:m
   ```
 - effettuare build (verrà generato main.hex)
-                                                              
+
+## 2b. Compilazione su Atmel Studio (Windows)
+
+- Menu Build->Build "nome progetto"
+                                                             
 ## 3. Collegare l'USBtinyISP
 
-- Assicurarsi di aver correttamente collegato il programmatore al computer e di aver installato i driver per il suo funzionamento
+- Assicurarsi di aver correttamente collegato il programmatore al computer e di aver installato i driver per il suo funzionamento (su Mac non è necessario installare driver)
 
 - Collegare l'USBtinyISP al connettore SV2
 
-## 4. Flash
+## 4a. Flash su Mac
 
 - Caricare il file .hex nel chip: 
    ```
    avrdude -c usbtiny -p t2313 -e -U flash:w:main.hex
    ```
+## 4a. Flash su Windows (Atmel Studio)
+
+- Menu Tools->USBTiny (per la configurazione vedi https://www.programming-electronics-diy.xyz/2020/09/using-usbtinyisp-programmer-with-atmel.html)
+
 # Utilizzo dell'ESP01 per il supporto WIFI
 
 ![esp01](esp-01.jpg)
