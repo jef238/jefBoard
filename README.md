@@ -107,7 +107,7 @@ Questa procedura deve essere eseguita solo una volta poichè serve a settare le 
    ```
    avrdude -c usbtiny -p t2313 -e -U flash:w:main.hex
    ```
-## 4a. Flash su Windows (Atmel Studio)
+## 4b. Flash su Windows (Atmel Studio)
 
 - Menu Tools->USBTiny (per la configurazione vedi https://www.programming-electronics-diy.xyz/2020/09/using-usbtinyisp-programmer-with-atmel.html)
 
