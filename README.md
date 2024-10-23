@@ -159,7 +159,7 @@ E' possibile utilizzare il software ESPlorer (https://github.com/4refr0nt/ESPlor
 In questo caso l'ESP01 funge da server in ascolto sulla porta 8080 tramite connessione WIFI; Ricevuto il comando lo inoltra tramite la connessione seriale verso l'Attiny2313.
 Per questo utilizzo è necessario che la scheda sia equipaggiata con l'ESP01 aggiornata con il firmware nodeMCU, ed i relativi componenti. Di seguito un esempio di file init.lua (da caricare sull'ESP01) e del codice da utilizzare sull'Attiny2313:
 
-## init.lua
+## init.lua (ESP01)
 
 ```
 wifi.setmode(wifi.SOFTAP)
@@ -172,7 +172,7 @@ uart.setup(0, 9600, 8, uart.PARITY_NONE, uart.STOPBITS_1, 1)
 sv = net.createServer(net.TCP, 30)
 
 function receiver(sck, data)
-  print(data)  
+  print(data)  //senda data to jefBoard by serial
 end
 
 if sv then
@@ -182,7 +182,7 @@ if sv then
 end
 ```
 
-## main.c
+## main.c (jefBoard/Attiny2313)
 
 ```
 #define F_CPU 4000000 UL // 4 MHz Crystal
