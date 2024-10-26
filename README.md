@@ -26,11 +26,11 @@ Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 
 | Sigla | Valore                        | Tipo			        | Note                                        |
 |-------|-------------------------------|-------------------------------|---------------------------------------------|
-| C1    | 100n           		| Condesatore poliestere        |				              |    
-| C2    | 100u           		| Condesatore elettrolitico     |					      |
-| C4    | 10u            		| Condesatore elettrolitico     | (Opzionale - Solo in caso di supporto WIFI) |	
-| C5    | 22p            		| Condesatore ceramico          |					      |
-| C6    | 22p            		| Condesatore ceramico          | 					      |
+| C1    | 100n           		| Condensatore poliestere        |				              |    
+| C2    | 100u           		| Condensatore elettrolitico     |					      |
+| C4    | 10u            		| Condensatore elettrolitico     | (Opzionale - Solo in caso di supporto WIFI) |	
+| C5    | 22p            		| Condensatore ceramico          |					      |
+| C6    | 22p            		| Condensatore ceramico          | 					      |
 | ESP01 |                 		| Connettore pin		| (Opzionale - Solo in caso di supporto WIFI) |
 | IC1   | ATtiny2313/ATtiny2313a        | AVR			        |				              |
 | IC2   | LM1117DTX 3.3V 		|			        | (Opzionale - Solo in caso di supporto WIFI) |	
