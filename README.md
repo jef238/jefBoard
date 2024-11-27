@@ -72,7 +72,7 @@ Questa procedura deve essere eseguita solo una volta poichè serve a settare le 
     ```
     /* Oscillatore interno 1MHZ */     						-U lfuse:w:0x64:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
     /* Quarzo esterno da 3 a 8MHZ */   						-U lfuse:w:0xfd:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
-    /* Quarzo esterno da 16MHZ con CKDIV8 e frequenza effettiva 2MHZ */		-U efuse:w:0xff:m -U hfuse:w:0xdf:m -U lfuse:w:0x4e:m     
+    /* Quarzo esterno da 16MHZ con CKDIV8 e frequenza effettiva 2MHZ */		-U lfuse:w:0x5e:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m     
     ```
 - Impostare i FUSE Bits nell'Attiny2313:
    ```
