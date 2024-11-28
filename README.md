@@ -172,7 +172,7 @@ uart.setup(0, 9600, 8, uart.PARITY_NONE, uart.STOPBITS_1, 1)
 sv = net.createServer(net.TCP, 30)
 
 function receiver(sck, data)
-  print(data)  //senda data to jefBoard by serial
+  print(data)  --senda data to jefBoard by serial
 end
 
 if sv then
