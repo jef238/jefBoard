@@ -11,6 +11,10 @@ Alcune caratteristiche:
 
 # Schema ed elenco componenti
 
+![example](pinout_x313.jpg)
+
+# Schema ed elenco componenti
+
 ![example](schematic.png)
 
 # PCB Layout
