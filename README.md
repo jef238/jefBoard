@@ -9,7 +9,7 @@ Alcune caratteristiche:
 - JefBoard può essere assemblata anche senza l'ESP-01 e relativi componenti di alimentazione se non si necessita di supporto WiFi abbassando ulteriormente il costo.
 - JefBoard è una scheda di piccole dimensioni 6x4 cm.
 
-# Schema ed elenco componenti
+## Attiny 2313 pinout
 
 ![example](pinout_x313.jpg)
 
