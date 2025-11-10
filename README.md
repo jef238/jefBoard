@@ -197,7 +197,7 @@ end
 
 // Define baud rate
 #define USART_BAUDRATE 9600
-#define BAUD_PRESCALE(((F_CPU / (USART_BAUDRATE * 16 UL))) - 1)
+#define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
 
 volatile unsigned char value;
 /* This variable is volatile so both main and RX interrupt can use it.
