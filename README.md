@@ -115,7 +115,7 @@ Questa procedura deve essere eseguita solo una volta poichè serve a settare le 
 
 # Utilizzo dell'ESP01 per il supporto WIFI
 
-![esp01](esp-01.jpg)
+![esp01](esp-01.jpg) ![esp01](esp01_pinout.jpg) 
 
 L'ESP01 è un modulo SOC basato sul chip ESP8266 che permette di aggiungere il supporto al WIFI in modo semplice ed economico.
 Prima di inserirlo sulla jefBoard è necessario fare una precisazione:
