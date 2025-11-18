@@ -44,8 +44,8 @@ Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 | PWR   |                  		| Connettore tipo W237-102      | (Opzionale)                                 |
 | Q1    |                   		| Quarzo 4MHZ    	        |	                                      |
 | R1    | 10k            		| 1/4w		                |                                             |
-| R2    | 10k            		| 1/4w 				| (Opzionale - Solo in caso di supporto WIFI) |	
-| R3    | 20k            		| 1/4w 	        		| (Opzionale - Solo in caso di supporto WIFI) |	
+| R2    | 1k            		| 1/4w 				| (Opzionale - Solo in caso di supporto WIFI) |	
+| R3    | 2k            		| 1/4w 	        		| (Opzionale - Solo in caso di supporto WIFI) |	
 | R4    | 220            		| 1/4w                		| 					      |
 | RESET1|                  		| Microswitch                   |                                             |
 | RESET2|                 		| Microswitch			| (Opzionale - Solo in caso di supporto WIFI) |
