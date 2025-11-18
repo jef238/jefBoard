@@ -22,8 +22,6 @@ Per reperire la PCB scrivi al mio indirizzo giuseppe.culotta@gmail.com
 
 ![example](top.png)
 
-![pcb](pcb.jpg)
-
 ![jefboard_r](jefboard_r.PNG)
 
 ## Elenco componenti
